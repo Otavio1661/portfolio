@@ -55,7 +55,7 @@ header nav{
     align-items: end;
 }
 
-header nav a {
+.m6 {
     height: 40px;
     padding-bottom: 5px;
     color: white;
@@ -66,6 +66,34 @@ header nav a {
     align-items: end;
     text-decoration: none;
 }
+
+
+@media (max-width: 400px) {
+    .m6 {
+        font-size: 20px;
+    }
+
+    #PAI {
+        margin-top: 500px;
+    }
+}
+@media (max-width: 450px) {
+    .m6{
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    html {
+        height: 200vh;
+    }
+
+    #filho2 p {
+        font-size: 17px;
+        margin-top: 0px;
+    }
+    
+}
+
 
 header nav a:hover {
     transition: 0.5s;
@@ -87,7 +115,7 @@ section {
 }
 
 
-#PAI {
+.pai {
     width: 90%;
     max-width:1000px;
     height: 400px;
@@ -113,18 +141,29 @@ section {
     #filho1 {
         transition: 5s;
         min-width: 50px;
+        background-position: -72px;
     }
 
-    header a {
-        font-size: 15px;
-    }
 }
 
-@media (max-width: 380px) {
-    #filho1 {
-        transition: 5s;
-        display: none;
+@media (max-width: 768px) {
+    .pai {
+        margin-top: 250px;
+        width: 80%;
     }
+
+    #sobre p { 
+        width: 80%;
+    }
+
+    #projetos p { 
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 490px;
+    }
+
 }
 
 #filho2 {
@@ -137,31 +176,43 @@ section {
     text-align: justify;
 }
 
+
 #sobre {
     margin-top: 40px;
     width: 90%;
+    height: auto;
     max-width:1000px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
 }
 
 
 #projetos {
     margin-top: 40px;
     width: 90%;
+    height: auto;
     max-width:1000px;
     color: white;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column
 }
 
 
 footer {
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: center;
     background: rgb(0, 0, 20);
     backdrop-filter: blur(1000px);
     -webkit-backdrop-filter: blur(1000px);
-    margin-top: 100px;
 }
 
 footer nav{
