@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 400vh;
+}
+
+#menu {
+    backdrop-filter: blur(30px);
+    box-shadow: 0 5px 40px rgba(0, 14, 41, 0.6);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+#nav a {
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#assunto {
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(31, 31, 46), rgb(54, 66, 83) , rgb(0, 0, 50)90%); 
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#home {
+    max-width: 1200px;
+    border: 1px solid black;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pai {
+    width: 90%;
+    height: 400px;
+    margin-top: 150px;
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(1000px);
+    border-radius: 30px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filho1 {
+    width: 300px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#filho1 img {
+    width: 300px;
+    height: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1;
+    box-shadow: 2px 5px rgba(255, 255, 255, 0.384);
+}
+
+@media (max-width: 768px) {
+    #filho1 {
+        display: none;
+    }
+
+    #filho2{
+        transition: 2s;
+        min-width: 100%;
+    }
+
+    #nav a {
+        font-size: 15px;
+    }
+
+}
+
+#filho2 {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#filho2 h1 {
+    font-size: 22px;
+}
+
+#filho_do_filho2 {
+    width: 90%;
+    height: 90%;
+    color: white;
+}
+
+#sobre {
+    max-width: 1200px;
+    border: 1px solid yellow;
+    width: 90%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre_filho {
+    width: 90%;
+    height:600px;
+    margin-top: 150px;
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(1000px);
+    border-radius: 30px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+#sobre_filho_filho {
+    width: 90%;
+}
+
+#projeto {
+    max-width: 1200px;
+    border: 1px solid purple;
+    width: 90%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#titulo {
+    margin-bottom: -400px;
+    color: white;
+}
+
+#projeto_filho {
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(1000px);
+    border-radius: 30px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+#projeto_filho_filho {
+    width: 90%;
+}
+
+#rodape {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+}
