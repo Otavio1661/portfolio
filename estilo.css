@@ -5,6 +5,7 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
     margin-bottom: 5px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #assunto {
@@ -72,7 +73,8 @@ body {
 
 #pai {
     width: 90%;
-    height: 400px;
+    max-width: 900px;
+    height:400px;
     margin-top: 150px;
     backdrop-filter: blur(1000px);
     -webkit-backdrop-filter: blur(1000px);
@@ -110,11 +112,81 @@ body {
         min-width: 100%;
     }
 
+    #filho2 h1 {
+        margin-top: -5px;
+    }
+    #titulo {
+        margin-top: 150px;
+    }
+
+    #filho2 h1 {
+        margin-top: -10px;
+    }
+    .sobre_filho {
+        height: 500px;
+    }
+
+    #projeto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #titulo {
+        margin-top: -100px;
+    }
+
+    #projeto_filho {
+        margin-top: -500px;
+    }
+
+    .rodape_pai h3 {
+        display: none;
+    }
+
+    #rodape_pai a {
+        font-size: 14px;
+    }
+
+    #rodape_filhos {
+        margin-top: 20px;
+        max-height: 60px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #menu {
+        height: 75px;
+    }
+    
     #nav a {
         font-size: 15px;
     }
 
+    #titulo {
+        margin-top: 0px;
+    }
+   
+    #projeto_filho {
+        margin-top: -270px;
+    }
+
+    .sobre_filho {
+        margin-bottom: 20%;
+        height: 550px;
+    }
 }
+
+@media (max-width: 400px) {
+    #sobre_filho {
+        margin-top: -10%;
+        height: 550px;
+        margin-top: 30px;
+    }
+}
+
 
 #filho2 {
     width: 60%;
@@ -141,12 +213,14 @@ body {
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#sobre_filho {
+.sobre_filho {
     width: 90%;
+    max-width: 900px;
     height:600px;
-    margin-top: 150px;
+    margin-top: 10px;
     backdrop-filter: blur(1000px);
     -webkit-backdrop-filter: blur(1000px);
     border-radius: 30px;
@@ -170,22 +244,29 @@ body {
     justify-content: space-around;
 }
 
-#titulo {
-    margin-bottom: -400px;
+.titulo {
+    margin-top: 150px;
     color: white;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-top: 150px;
+    justify-content: center;
 }
 
-#projeto_filho {
-    width: 200px;
+.projeto_filho {
+    width: 250px;
     height: 200px;
-    margin-top: 150px;
     backdrop-filter: blur(1000px);
     -webkit-backdrop-filter: blur(1000px);
     border-radius: 30px;
     box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
+    margin-top: -270px;
 }
+
+
 
 #projeto_filho_filho {
     width: 90%;
@@ -195,4 +276,86 @@ body {
     width: 100%;
     height: 100vh;
     border: 1px solid green;
+    display: flex;
+    align-items: end;
+}
+
+.rodape_pai {
+    background: rgb(37, 37, 37);
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    justify-content:space-evenly ;
+}
+
+
+.rodape_pai a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+}
+
+h3{
+    display: inline;
+    font-size: 15px;
+}
+
+#rodape_pai div {
+    height: 60%;
+    display: flex;
+    text-align:left;
+    display: inline;
+    padding: 0px 10px;
+}
+
+#git {
+    color: aqua;padding: 0px 10px;
+}
+
+#whats {
+    color: aqua;padding: 0px 10px;
+}
+
+#lin {
+    color:  aqua;padding: 0px 10px;
+}
+
+#email {
+    color: aqua;padding: 0px 10px;
+}
+
+#rodape_filhos {
+    width: 240px;
+}
+
+.le {
+    border-left: 1px solid white;
+}
+
+#rodape_pai a:hover {
+    transition: 0.5s;
+    color: rgb(0, 255, 13);
+}
+
+#data {
+    background: red;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#data h3 {
+    color: white;
+}
+
+#data a {
+    color: white;
+    text-decoration: none;
 }
